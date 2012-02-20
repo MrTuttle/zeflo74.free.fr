@@ -1,0 +1,174 @@
+
+body {
+	font: 14px/1em "Helvetica neue", Helvetica, Arial, sans-serif;
+	padding: 1em;
+	font-weight: bold;
+
+}
+nav {
+	a {
+		color: inherit;
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.main-navigation {
+	.cf;
+	font-size: 0.8em;
+	text-shadow: 0 1px 1px #fff;
+	
+	ul, li, a {
+		float: left;
+	}
+	ul {
+		border: 1px solid #ddd;
+		.border-radius();
+		.linear-gradient();
+	}
+	li {
+		position: relative;
+		border-right: 1px solid #ddd;
+	}
+	li:hover {
+		a {
+			.linear-gradient(#dfdfdf, #c0bebe, 100%);
+		}
+		.children {
+			left: 50%;
+			
+			a {
+				background: none;
+			}
+			a:hover {
+				background: #dff2ff;
+			}
+		}
+	}
+	li:last-child {
+		border-right: none;
+	}
+	a {
+		.border-radius(3px);
+		height: 35px;
+		line-height: 35px;
+		margin: 3px;
+		padding: 0 15px;
+	}
+	.children {
+		background: #fff;
+		.box-shadow();
+		left: -999em;
+		margin-left: -65px;
+		position: absolute;
+		top: 30px;
+		width: 130px;
+		z-index: 99;
+		
+		li, a {
+			float: none;
+		}
+		li {
+			border-right: none;
+		}
+		a {
+			.border-radius(3px);
+			height: 30px;
+			line-height: 30px;
+			margin: 3px;
+		}
+	}
+}
+
+.border-radius (@radius: 5px) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+.box-shadow (@x: 0, @y: 5px, @blur: 5px, @spread: -5px, @color: #000) {
+	-moz-box-shadow: @x @y @blur @spread @color;
+	-webkit-box-shadow: @x @y @blur @spread @color;
+	box-shadow: @x @y @blur @spread @color;
+}
+.linear-gradient (@start: #fff, @end: #ddd, @percent: 100%) {
+	background: @start; /* Old */
+	background: -moz-linear-gradient(top,  @start 0%, @end @percent); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(@percent,@end)); /* Chrome, Safari 4+ */
+	background: -webkit-linear-gradient(top,  @start 0%,@end @percent); /* Chrome 10+, Safari 5.1+ */
+	background: -o-linear-gradient(top,  @start 0%,@end @percent); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @start 0%,@end @percent); /* IE 10+ */
+	background: linear-gradient(top,  @start 0%,@end @percent); /* W3C */
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+@media only screen and (max-width: 640px) {
+	.main-navigation {
+		ul {
+			border: none;
+			background: none;
+			.border-radius(0);
+		}
+		li {
+			border-right: none;
+		}
+		li:hover {
+			a {
+				.linear-gradient(#ff8400, #e07400, 100%);
+				color: #fff;
+				text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+			}
+			.children {			
+				a {
+					color: #000;
+					text-shadow: 0 1px 1px #fff;
+				}
+				a:hover {
+					.linear-gradient(#ff8400, #e07400, 100%);
+					color: #fff;
+					text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+				}
+			}
+		}
+		a {
+			border: 1px solid #ddd;
+			.border-radius();
+			font-size: 1.2em;
+			height: auto;
+			.linear-gradient();
+			line-height: 1em;
+			padding: 15px;
+		}
+		.children {
+			border: 1px solid #ddd;
+			.border-radius(5px);
+			top: 40px;
+		}
+	}
+	.instructions {
+		.border-radius();
+		color: #fff;
+		font-size: 1.2em;
+		.linear-gradient(#ff8400, #e07400, 100%);
+		line-height: 1em;
+		margin: 0 0 5px;
+		padding: 5px 10px;
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+	}
+}
+
+.main-navigation select {
+	font-size: 1.5em;
+}

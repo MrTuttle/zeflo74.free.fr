@@ -1,0 +1,270 @@
+body {
+  font: 14px/1em "Helvetica neue", Helvetica, Arial, sans-serif;
+  padding: 1em;
+  font-weight: bold;
+}
+nav a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+.main-navigation {
+  zoom: 1;
+  font-size: 0.8em;
+  text-shadow: 0 1px 1px #fff;
+}
+.main-navigation ul, .main-navigation li, .main-navigation a {
+  float: left;
+}
+.main-navigation ul {
+  border: 1px solid #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  /* Old */
+
+  background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  /* Chrome, Safari 4+ */
+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* Chrome 10+, Safari 5.1+ */
+
+  background: -o-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* IE 10+ */
+
+  background: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* W3C */
+
+}
+.main-navigation li {
+  position: relative;
+  border-right: 1px solid #ddd;
+}
+.main-navigation li:hover a {
+  background: #dfdfdf;
+  /* Old */
+
+  background: -moz-linear-gradient(top, #dfdfdf 0%, #c0bebe 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dfdfdf), color-stop(100%, #c0bebe));
+  /* Chrome, Safari 4+ */
+
+  background: -webkit-linear-gradient(top, #dfdfdf 0%, #c0bebe 100%);
+  /* Chrome 10+, Safari 5.1+ */
+
+  background: -o-linear-gradient(top, #dfdfdf 0%, #c0bebe 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #dfdfdf 0%, #c0bebe 100%);
+  /* IE 10+ */
+
+  background: linear-gradient(top, #dfdfdf 0%, #c0bebe 100%);
+  /* W3C */
+
+}
+.main-navigation li:hover .children {
+  left: 50%;
+}
+.main-navigation li:hover .children a {
+  background: none;
+}
+.main-navigation li:hover .children a:hover {
+  background: #dff2ff;
+}
+.main-navigation li:last-child {
+  border-right: none;
+}
+.main-navigation a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 35px;
+  line-height: 35px;
+  margin: 3px;
+  padding: 0 15px;
+}
+.main-navigation .children {
+  background: #fff;
+  -moz-box-shadow: 0 5px 5px -5px #000000;
+  -webkit-box-shadow: 0 5px 5px -5px #000000;
+  box-shadow: 0 5px 5px -5px #000000;
+  left: -999em;
+  margin-left: -65px;
+  position: absolute;
+  top: 30px;
+  width: 130px;
+  z-index: 99;
+}
+.main-navigation .children li, .main-navigation .children a {
+  float: none;
+}
+.main-navigation .children li {
+  border-right: none;
+}
+.main-navigation .children a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  margin: 3px;
+}
+/* For modern browsers */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  zoom: 1;
+}
+@media only screen and (max-width: 640px) {
+  .main-navigation ul {
+    border: none;
+    background: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  .main-navigation li {
+    border-right: none;
+  }
+  .main-navigation li:hover a {
+    background: #ff8400;
+    /* Old */
+  
+    background: -moz-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8400), color-stop(100%, #e07400));
+    /* Chrome, Safari 4+ */
+  
+    background: -webkit-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Chrome 10+, Safari 5.1+ */
+  
+    background: -o-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* IE 10+ */
+  
+    background: linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* W3C */
+  
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .main-navigation li:hover .children a {
+    color: #000;
+    text-shadow: 0 1px 1px #fff;
+  }
+  .main-navigation li:hover .children a:hover {
+    background: #ff8400;
+    /* Old */
+  
+    background: -moz-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8400), color-stop(100%, #e07400));
+    /* Chrome, Safari 4+ */
+  
+    background: -webkit-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Chrome 10+, Safari 5.1+ */
+  
+    background: -o-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* IE 10+ */
+  
+    background: linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* W3C */
+  
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .main-navigation a {
+    border: 1px solid #ddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    height: auto;
+    background: #ffffff;
+    /* Old */
+  
+    background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    /* Chrome, Safari 4+ */
+  
+    background: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* Chrome 10+, Safari 5.1+ */
+  
+    background: -o-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* IE 10+ */
+  
+    background: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* W3C */
+  
+    line-height: 1em;
+    padding: 15px;
+  }
+  .main-navigation .children {
+    border: 1px solid #ddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    top: 40px;
+  }
+  .instructions {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    background: #ff8400;
+    /* Old */
+  
+    background: -moz-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8400), color-stop(100%, #e07400));
+    /* Chrome, Safari 4+ */
+  
+    background: -webkit-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Chrome 10+, Safari 5.1+ */
+  
+    background: -o-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* IE 10+ */
+  
+    background: linear-gradient(top, #ff8400 0%, #e07400 100%);
+    /* W3C */
+  
+    line-height: 1em;
+    margin: 0 0 5px;
+    padding: 5px 10px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+.main-navigation select {
+  font-size: 1.5em;
+}
