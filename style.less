@@ -32,6 +32,7 @@ nav {
 	li {
 		position: relative;
 		border-right: 1px solid #ddd;
+		.noliststyle;
 	}
 	li:hover {
 		a {
@@ -101,6 +102,9 @@ nav {
 	background: -o-linear-gradient(top,  @start 0%,@end @percent); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  @start 0%,@end @percent); /* IE 10+ */
 	background: linear-gradient(top,  @start 0%,@end @percent); /* W3C */
+}
+.noliststyle{
+	list-style: none;
 }
 
 /* For modern browsers */

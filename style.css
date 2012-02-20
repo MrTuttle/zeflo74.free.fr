@@ -50,6 +50,7 @@ nav a {
 .main-navigation li {
   position: relative;
   border-right: 1px solid #ddd;
+  list-style: none;
 }
 .main-navigation li:hover a {
   background: #dfdfdf;
@@ -120,6 +121,9 @@ nav a {
   height: 30px;
   line-height: 30px;
   margin: 3px;
+}
+.noliststyle {
+  list-style: none;
 }
 /* For modern browsers */
 .cf:before, .cf:after {
